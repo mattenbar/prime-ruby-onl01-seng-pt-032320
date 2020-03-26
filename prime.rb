@@ -4,6 +4,8 @@ def prime?(num)
   count=0
   if (num==0 || 1)
   	return false
+  elsif (num==2)
+    return true
   else
   	i=2
   	while(i<num)
