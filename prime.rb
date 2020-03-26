@@ -4,11 +4,11 @@ def prime?(num)
   num = num.abs
   if num == 1 || 0
     return false
-  end
-  if num == 2
+  elsif condition
+     num == 2
     return true
-  end
-    while n < num
+  else
+    while n <= num
       return false if num % n == 0
       n += 1
     end
