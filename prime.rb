@@ -2,7 +2,7 @@
 def prime?(num)
   n = 2
   num = num.abs
-  if num == 1 || 0
+  if num == 1 || 0 || 2
     return false
   else
     while n < num
