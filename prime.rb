@@ -1,15 +1,21 @@
 # Add  code here!
 def prime?(num)
   num = num.abs
-  n = 3
-  while n < num
-    return false if num % n == 0
-    n += 1
+  count=0
+  if (num==0)
+  	return false
+  else
+  	i=2
+  	while(i<num)
+  		if (num%i==0)
+  			count+=1
+  		end
+  		i+=1
+  	end
+
   end
-  if num == 0||1
-    return false
-  elsif num == 2
-    return true
-  end
-  true
-end
+  	if count>1
+  		return false
+  	else
+  		return true
+  	end
